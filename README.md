@@ -9,7 +9,7 @@ One turtle makes the workspace dirty while moving and another turtle cleans the 
 
 Commands are
 
-1) catkin_ws$ mkdir -p /src/turtle_prj           // This is the working directory
+1)catkin_ws$ mkdir -p /src/turtle_prj           // This is the working directory
 
 2)catkin_ws/src/turtle_prj $ git clone https://github.com/joeljosej/ROS_Project    //Clone this package contents to turtle_prj folder
 
