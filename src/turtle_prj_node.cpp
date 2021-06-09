@@ -1,6 +1,6 @@
 #include <ros/ros.h>
 #include <ros/topic.h>
-
+// Msg include
 #include <geometry_msgs/Twist.h>
 #include <turtlesim/Pose.h>
 #include <turtlesim/Color.h>
@@ -14,6 +14,7 @@
 
 void setPoseAbs(double x, double y, double theta)
 {
+//This function is to call TeleportAbsolute service to move the turtle to specific location
     turtlesim::TeleportAbsolute pose_abs;
     pose_abs.request.x = x;
     pose_abs.request.y = y;
@@ -28,12 +29,16 @@ void setPoseAbs(double x, double y, double theta)
 }
 void poseCallback(const turtlesim::PoseConstPtr& pose)
 {
+  //This function is to callback function on receiving data on /turtle1/pose topic	
    ROS_INFO("INSIDE poseCallback function"); 	
    setPoseAbs(pose->x,pose->y,pose->theta);
     
 }
 void spawnPlayerTurtle(std::string name, double x, double y, double theta)
 {
+    //This function is to spawn turtle and set Pen
+    
+    //This function is to spawn turtle with specific name and at a given Pose
     int r,g,b;
     ROS_INFO("Spawn %s", name.c_str());
     turtlesim::Spawn spawn;
@@ -42,10 +47,10 @@ void spawnPlayerTurtle(std::string name, double x, double y, double theta)
     spawn.request.y = y;
     spawn.request.theta = theta;
     ros::service::call<turtlesim::Spawn>("/spawn", spawn);
-    
+    //This function is to setPen turtle2 with background colour of turtlesim 
     turtlesim::SetPen set_pen;
-    set_pen.request.width = 25;
-    ros::param::get("/turtlesim/background_b", b);
+    set_pen.request.width = 25;  //pen width
+    ros::param::get("/turtlesim/background_b", b); // get background colour parameters
     ros::param::get("/turtlesim/background_g", g);
     ros::param::get("/turtlesim/background_r", r);
     set_pen.request.r = r;
@@ -59,15 +64,15 @@ void spawnPlayerTurtle(std::string name, double x, double y, double theta)
 
 int main(int argc, char **argv)
 {
-    ros::init(argc, argv, "Robot_cleaner");
+    ros::init(argc, argv, "Robot_cleaner");  //Name of node
     ros::NodeHandle nh;
 
     ROS_INFO("Reset and spawn another turtle");
     std_srvs::Empty empty;
-    ros::service::call<std_srvs::Empty>("/reset", empty);
-    spawnPlayerTurtle("turtle2", 1.0, 5.0, 0.0);
+    ros::service::call<std_srvs::Empty>("/reset", empty); //reset Turtlesim 
+    spawnPlayerTurtle("turtle2", 1.0, 5.0, 0.0);	    // spawn another turtle	
     ros::Subscriber turtle1_pos_sub = nh.subscribe<turtlesim::Pose>("/turtle1/pose", 20, poseCallback);
-    ros::Rate loop_rate(1);
+    ros::Rate loop_rate(1); //frequency at 1 Hz
 
     while (ros::ok())
     {
