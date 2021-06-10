@@ -1,12 +1,12 @@
 #include <ros/ros.h>
 #include <ros/topic.h>
-// Msg include
+// Msg include as follows
 #include <geometry_msgs/Twist.h>
 #include <turtlesim/Pose.h>
 #include <turtlesim/Color.h>
 #include <turtlesim/TeleportAbsolute.h>
 
-// Service includes
+// Service includes as follows
 #include <std_srvs/Empty.h>
 #include <turtlesim/Spawn.h>
 #include <turtlesim/SetPen.h>

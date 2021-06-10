@@ -7,7 +7,7 @@ It is basically a cleaning Robot . There are two turtles .
 
 One turtle makes the workspace dirty while moving and another turtle cleans the space by following the first turtle autonomously
 
-Commands are
+Commands are as follows
 
 1)catkin_ws$ mkdir -p /src/turtle_prj                        // This is the working directory
 
