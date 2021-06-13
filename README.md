@@ -65,11 +65,13 @@ Run teleop_key node to move the turtle1
 
 ![ros_node_graph](https://user-images.githubusercontent.com/81626993/121247770-40b7de80-c8c0-11eb-8ed7-d08e979d1563.png)
 
-````diff
-+ Green Licence TBD
-- Red End
-
-
 > ### Animation of Turtle_prj Cleaner
 
 ![Turtle_prj_01](https://user-images.githubusercontent.com/81626993/121795327-4c433680-cc2d-11eb-9912-be4af098e5c5.gif)
+
+
+
+````diff
++ Licence TBD
+- End
+````
