@@ -9,7 +9,7 @@ One turtle makes the workspace dirty while moving and another turtle cleans the 
 
 [Github Page]: http://github.com/joeljosej/
 
-> ## **Commands** are as follows
+> **`Commands`** are as follows
 ```console
 1. catkin_ws$ mkdir -p /src/turtle_prj   
 ```
