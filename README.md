@@ -1,11 +1,11 @@
-# <span style="color:yellow;">`Turtlesim based ROS_Project`</span>
-><span style="color:orange;">`This is a **turtlesim** based ROS project`</span>
+# 'Turtlesim based ROS_Project`</span>
+>`This is a **turtlesim** based ROS project`
 
-<span style="color:orange;">`In this project a turtle makes the space dirty while moving and another turtle cleans the space by following it.`</span>
+`In this project a turtle makes the space dirty while moving and another turtle cleans the space by following it.`
 
-<span style="color:orange;">`It is basically a cleaning Robot . There are two turtles`</span> 
+`It is basically a cleaning Robot . There are two turtles`
 
-<span style="color:orange;">`One turtle makes the workspace dirty while moving and another turtle cleans the space by following the first turtle autonomously`</span>
+`One turtle makes the workspace dirty while moving and another turtle cleans the space by following the first turtle autonomously`
 
 [myweb]: http://github.com/joeljosej/
 
