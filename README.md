@@ -1,11 +1,11 @@
 # **Turtlesim based ROS_Project**
 >This is a **turtlesim** based ROS project
 
-In this project a turtle makes the space dirty while moving and another turtle cleans the space by following it.
+[`In this project a turtle makes the space dirty while moving and another turtle cleans the space by following it`]
 
-It is basically a cleaning Robot . There are two turtles
+[`It is basically a cleaning Robot.There are two turtles`]
 
-One turtle makes the workspace dirty while moving and another turtle cleans the space by following the first turtle autonomously
+[`One turtle makes the workspace dirty while moving and another turtle cleans the space by following the first turtle autonomously`]
 
 [Github Page]: http://github.com/joeljosej/
 
