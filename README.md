@@ -72,6 +72,6 @@ Run teleop_key node to move the turtle1
 
 
 ````diff
-Licence TBD
-End
++ Licence TBD
+- End
 ````
