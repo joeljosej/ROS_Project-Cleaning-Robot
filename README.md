@@ -7,9 +7,9 @@ It is basically a cleaning Robot . There are two turtles
 
 One turtle makes the workspace dirty while moving and another turtle cleans the space by following the first turtle autonomously
 
-[myweb]: http://github.com/joeljosej/
+[Github Page]: http://github.com/joeljosej/
 
->`Commands` are as follows
+> ## **Commands** are as follows
 ```console
 1. catkin_ws$ mkdir -p /src/turtle_prj   
 ```
@@ -18,7 +18,7 @@ This is the working directory
 ```console
 2.  catkin_ws/src/turtle_prj $ git clone https://github.com/ joeljosej/  
 ```        
-Clone this package [myweb] contents to turtle_prj folder 
+Clone this package [Github Page] contents to turtle_prj folder 
 
 ```console
 
