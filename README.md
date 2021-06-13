@@ -11,16 +11,12 @@
 
 >Commands are as follows
 ```console
-
 1. catkin_ws$ mkdir -p /src/turtle_prj   
-
 ```
 This is the working directory
 
 ```console
-
 2.  catkin_ws/src/turtle_prj $ git clone https://github.com/ joeljosej/  
-
 ```        
 Clone this package [myweb] contents to turtle_prj folder 
 
@@ -29,25 +25,20 @@ Clone this package [myweb] contents to turtle_prj folder
 3. Copy the contents of ROS_Project folder to turtle_prj folder using cp command
 
 ```
-
 ```console
 
 4. catkin_ws$ catkin build   or   catkin_ws$ catkin_make
 
 ```                
-
 Build the package and executable turtle_prj_node is created
 
 ```console
-5. catkin_ws$ roscore  
-               
+5. catkin_ws$ roscore                 
 ``` 
-// Run ROS Master
+Run ROS Master
 
 ```console
-
 6. catkin_ws$ rosrun turtlesim turtlesim_node 
-
 ``` 
 Run an instance of turtlesim node
 
@@ -59,14 +50,11 @@ Run an instance of turtlesim node
 Run an instance of  turtle_prj node
 
 ```console
-
 8. catkin_ws$ rosrun turtlesim turtle_teleop_key  
- 
 ``` 
-
 Run teleop_key node to move the turtle1 
 
-Let all commands be executed in individual windows
+**Let all commands be executed in individual windows**
 
 
 > ### Screenshot of Turtle_prj Cleaner
