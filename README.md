@@ -10,7 +10,7 @@
 [myweb]: http://github.com/joeljosej/
 
 >Commands are as follows
-```
+```console
 
 1. catkin_ws$ mkdir -p /src/turtle_prj                        // This is the working directory
 
