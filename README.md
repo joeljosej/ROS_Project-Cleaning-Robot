@@ -42,4 +42,4 @@ Node graph of this project is given as follows
 
 Animation of Turtle_prj Cleaner
 
-![Turtle_prj_01](https://user-images.git
+![Turtle_prj_01](https://user-images.git)
