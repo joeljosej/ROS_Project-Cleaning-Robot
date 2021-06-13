@@ -1,4 +1,4 @@
-# 'Turtlesim based ROS_Project`</span>
+# **Turtlesim based ROS_Project**
 >`This is a **turtlesim** based ROS project`
 
 `In this project a turtle makes the space dirty while moving and another turtle cleans the space by following it.`
